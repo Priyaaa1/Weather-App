@@ -101,8 +101,8 @@
             android:text="@string/_23"
             android:textColor="@color/white"
             android:textSize="70dp"
-            tools:ignore="NotSibling,SpUsage"
-            />
+            tools:ignore="NotSibling,SpUsage" />
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
