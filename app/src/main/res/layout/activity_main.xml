@@ -19,11 +19,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/idRLHome"
-        android:visibility="gone"
+        android:visibility="visible"
         android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/idVBack"
+            android:id="@+id/idIVBack"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
@@ -36,7 +36,7 @@
             android:layout_marginTop="30dp"
             android:gravity="center"
             android:padding="20dp"
-            android:text="@string/city_name"
+            android:text="city_name"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="20sp"/>
@@ -49,29 +49,30 @@
             android:layout_below="@id/idTVCityName"
             android:weightSum="5"
             tools:ignore="ObsoleteLayoutParam" >
+
             <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:id="@+id/idTILCity"
+                android:layout_width="324dp"
+                android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:layout_weight="4.5"
                 android:background="@android:color/transparent"
                 android:hint="@string/enter_city_name"
                 android:padding="5dp"
-                app:hintTextColor="@color/white"
                 android:textColorHint="@color/white"
+                app:hintTextColor="@color/white"
                 tools:ignore="ObsoleteLayoutParam">
+
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/idEdtCity"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:id="@+id/idEdtCity"
+                    android:background="@android:color/transparent"
                     android:importantForAutofill="no"
                     android:inputType="text"
                     android:singleLine="true"
                     android:textColor="@color/white"
-                    android:textSize="14sp"
-                    android:background="@android:color/transparent"
-            />
+                    android:textSize="14sp" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <ImageView
@@ -93,7 +94,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="220dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
             android:gravity="center_horizontal"
@@ -104,12 +105,15 @@
             tools:ignore="NotSibling,SpUsage" />
 
         <ImageView
+            android:id="@+id/idIVIcon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/idIVIcon"
-            android:layout_centerHorizontal="true"
             android:layout_below="@id/idTVTemperature"
-            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
             android:src="@mipmap/ic_launcher"
             tools:ignore="ObsoleteLayoutParam" />
         <TextView
@@ -123,14 +127,17 @@
             android:textColor="@color/white"
             android:layout_below="@id/idIVIcon"
             tools:ignore="ObsoleteLayoutParam" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:layout_marginBottom="10dp"
+            android:layout_above="@id/idRvWeather"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="78dp"
             android:text="@string/today_s_weather_forecast"
             android:textColor="@color/white"
-            android:layout_above="@id/idRvWeather"
             android:textStyle="bold"
             tools:ignore="ObsoleteLayoutParam" />
 
