@@ -6,7 +6,7 @@ This is a simple weather application that provides real-time weather information
 The application utilizes an Weather API to fetch weather information and displays it in a user-friendly format. The weather data includes current conditions such as temperature, humidity, wind speed. Additionally, it may include forecasts for the next few days, depending on the API's capabilities.
 
 
-#Features
+# Features
 Current weather: The application displays the current weather conditions for the specified location, including temperature, humidity, wind speed, and weather description.
 
 Location search: Users can search for weather information by entering the name of a city or providing latitude and longitude coordinates.
